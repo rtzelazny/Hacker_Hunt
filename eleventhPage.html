@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>eleventhPage</title>
+<style type="text/css">
+@import url("webfonts/Grape_Nuts/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+	margin-left: 0;
+	font-size: 26px;
+	background-image: url("binaryBackground.png");
+	}
+	
+	section.rect {
+			width:100%;
+			height:50px;
+			border:1px solid #000;
+			background-color: rgba(34,43,59,1.00);
+			position:fixed;
+			bottom: 0;
+			
+		}
+	
+	div.topRect {
+		    margin-left : 5px;
+			width:180px;
+			height:35px;
+			border:2px solid #29355D;
+			background-color: rgba(223,230,240,1.00);
+		font-family: "Grape Nuts";
+		}
+	p.small {
+	line-height: 0.1;
+}
+	
+	div.bottomRect {
+		margin-left : 5px;
+		width:335px;
+		height:35px;
+		z-index: 1;
+		border:2px solid #29355D;
+		background-color: rgba(223,230,240,1.00);
+		position: fixed;
+		bottom : 10px;
+		right : 10px;
+		font-family: "Grape Nuts";
+		}
+	
+	.centered {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	p {
+		font-family: 'Silkscreen', cursive;
+		text-align: center;
+		font-size : 25px;
+	}
+	
+	.content {
+	z-index: 1;
+	position:fixed;
+	bottom: 4px;
+	}
+	div.hackerRect {
+	left: 100px;
+	bottom : 50px;
+	width: 1010px;
+	height: 140px;
+	z-index: 1;
+	position: fixed;
+	border: 2px solid #FFFFFF;
+	background-color: rgba(0,0,0,1.00);
+	}
+	
+	
+	
+body,td,th {
+}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+	function MM_DW_effectDrop(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
+{
+    obj[method](effect, { direction: direction, distance: distance}, speed);
+}
+function MM_DW_effectPulsate(obj,method,effect,mode,times,speed)
+{
+    obj[method](effect, { mode: mode,times:times}, speed);
+}
+</script>
+</head>
+
+<body>
+<div class = "topRect">
+  <em style = "margin-left : 5px; color: #163063"> <strong>Yes! The folder!</strong></em> <em style = "margin-left : 5px; color: #163063"><strong> </strong></em>
+</div>
+<img src="FileFinderBackground.png" alt="" width="1000" height="619" usemap="#Map" class = "centered"/>
+<map name="Map">
+  <area shape="rect" coords="249,124,425,276" href="twelfthPage.html" alt = "Top Secret Folder">
+</map>
+<div class = "hackerRect" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small" style = "color: #F30E0E">Wait no!</p>
+	<p class = "small" style = "color: #F30E0E"> Please don't take the folder back!</p>
+  <p class = "small" style = "color: #F30E0E"> </p>
+<p class = "small" style = "color: #F30E0E"> I have a job to do! I can't be fired! You understand, right???</p>
+<p class = "small" style = "color: #F30E0E"> We were having fun! We can't end it like this!</p></div>
+	
+	
+	
+	
+	
+<div class = "bottomRect"><em style = "margin-left : 5px; color: #163063"> <strong>Hahaha! look who's laughing now!</strong></em></div>
+
+</body>
+</html>

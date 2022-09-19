@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tenthPage</title>
+<style type="text/css">
+@import url("webfonts/Grape_Nuts/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+	margin-left: 0;
+	font-size: 26px;
+	background-image: url("binaryBackground.png");
+	}
+	
+	section.rect {
+			width:100%;
+			height:50px;
+			border:1px solid #000;
+			background-color: rgba(34,43,59,1.00);
+			position:fixed;
+			bottom: 0;
+			
+		}
+	
+	div.topRect {
+		    margin-left : 5px;
+			width:180px;
+			height:35px;
+			border:2px solid #29355D;
+			background-color: rgba(223,230,240,1.00);
+		font-family: "Grape Nuts";
+		}
+	p.small {
+	line-height: 0.1;
+}
+	
+	div.bottomRect {
+		margin-left : 5px;
+		width:275px;
+		height:35px;
+		z-index: 1;
+		border:2px solid #29355D;
+		background-color: rgba(223,230,240,1.00);
+		position: fixed;
+		bottom : 10px;
+		right : 10px;
+		font-family: "Grape Nuts";
+		}
+	
+	.centered {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	p {
+		font-family: 'Silkscreen', cursive;
+		text-align: center;
+		font-size : 25px;
+	}
+	
+	.content {
+	z-index: 1;
+	position:fixed;
+	bottom: 4px;
+	}
+	div.hackerRect {
+	left: 100px;
+	top : 100px;
+	width: 1010px;
+	height: 140px;
+	z-index: 1;
+	position: fixed;
+	border: 2px solid #FFFFFF;
+	background-color: rgba(0,0,0,1.00);
+	}
+	div.background {
+	left: 300px;
+	top : 242px;
+	width: 605px;
+	height: 540px;
+	z-index: 1;
+	position: absolute;
+	}
+	.binaryRect1 {
+		position : absolute;
+		left : 100px;
+		top : 50px;
+		width : 300px;
+		height : 100px;
+		
+		color: #FFFFFF;
+		background-color: #000;
+		
+	}
+	.binaryRect2 {
+		position : absolute;
+		left : 600px;
+		top : 300px;
+		width : 300px;
+		height : 100px;
+		color: #FFFFFF;
+		background-color: #000;
+		
+	}
+	.binaryRect3 {
+		position : absolute;
+		right : 50px;
+		top : 150px;
+		width : 150px;
+		height : 100px;
+		color: #FFFFFF;
+		background-color: #000;
+		
+	}
+	.binaryRect4 {
+		position : absolute;
+		left : 50px;
+		bottom : 50px;
+		width : 150px;
+		height : 100px;
+		color: #FFFFFF;
+		background-color: #000;
+		
+	}
+	.profilePic {
+		position : absolute;
+		left : 100px;
+		top : 50px;
+	}
+	.search {
+		position : absolute;
+		left : 600px;
+		top : 300px;
+	}
+	.chroome {
+		position : absolute;
+		right : 300px;
+		
+	}
+	.email {
+		position : absolute;
+		left : 500px;
+		bottom : 200px;
+	}
+	.docuword {
+		position : absolute;
+		left : 100px;
+		top : 300px;
+	}
+	.wifi {
+		position : absolute;
+		left : 400px;
+		top : 100px;
+	}
+	.battery {
+		position : absolute;
+		right : 100px;
+		top : 500px;
+	}
+	.time {
+		position : absolute;
+		left : 250px;
+		bottom : 60px;
+	}
+	.fileFinder {
+		position : absolute;
+		right : 100px;
+		top : 200px;
+	}
+	.binary1 {
+		z-index: 1;
+		position : absolute;
+		top: 0;
+	}
+	.binary2 {
+		z-index : 1;
+		position : absolute;
+		right : 0;
+		top : 0px;
+	}
+	.binary3 {
+		z-index : 1;
+		position : absolute;
+		right : 50px;
+		top : 470px;
+	}
+	.binary4 {
+		z-index : 1;
+		position : absolute;
+		right : 0px;
+		top : 0px;
+	}
+	.binary5 {
+		z-index : 1;
+		position : absolute;
+		left : 400px;
+		top : 50px;
+	}
+	.binary6 {
+		z-index : 1;
+		position : absolute;
+		left : 300px;
+		botttom : 0px;
+	}
+	.binary7 {
+		z-index : 1;
+		position : absolute;
+		bottom: 0;
+	}
+	
+	
+body,td,th {
+}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+	function MM_DW_effectDrop(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
+{
+    obj[method](effect, { direction: direction, distance: distance}, speed);
+}
+function MM_DW_effectPulsate(obj,method,effect,mode,times,speed)
+{
+    obj[method](effect, { mode: mode,times:times}, speed);
+}
+</script>
+</head>
+
+<body>
+<div class = "topRect">
+  <em style = "margin-left : 5px; color: #163063"> <strong>Where are we?</strong></em> <em style = "margin-left : 5px; color: #163063"><strong> </strong></em>
+</div>
+	
+<div class = "hackerRect" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small" style = "color: #F30E0E">Wait I think I've lost the folder in all this mess</p>
+	<p class = "small" style = "color: #F30E0E"> Ugh where could I have put it?</p>
+		<p class = "small" style = "color: #F30E0E"> I need to start being more organized in my hacking jobs</p>
+<p class = "small" style = "color: #F30E0E"> Hold on let me look for it and I'll get right back to hiding...</p></div>
+	
+	<div class = "background"><img src="CroppedHackerGif.png" alt="" width="600" height="690" style="text-align: center; margin-right: 20px; position : fixed; z-index : 2"  onload="MM_DW_effectShake($(this),'effect','shake','up',20,2,1000)" onMouseOver="MM_DW_effectFade($(this),'hide','fade',1000)" ></div>
+	
+	
+	
+<div class = "bottomRect"><em style = "margin-left : 5px; color: #163063"> <strong>I've got to find that folder!</strong></em></div>
+
+<img src="croppedProfilePic1.png" width="43" height="40" alt="" class = "profilePic" title = "Profile Pic"/>
+<img src="croppedSearchBar.png" width="270" height="38" alt="" class = "search" title = "Search Bar"/>
+<img src="Chroome.png" alt="" width="45" height="43" class = "chroome" title = "Groogle Chroome"/>
+<img src="AdobeStock_170364618.png" width="41" height="41" alt="" class = "email"/> 
+<img src="Docuword2.png" height="39" width = "42" alt="" class = "docuword"/>
+<img src="wifi-icon-on-transparent-background-wi-fi-logo-vector-27932241.png" width="43" height="43" alt="" class = "wifi"/> 
+<img src="batteryIcon.png" height="43" alt="" class = "battery"/>
+<span  style="color: rgba(198,211,223,1.00); font-size: 30px" class = "time">4:20 pm</span>
+<a href="eleventhPage.html"><img src="FileFinder.png" width="50" height="44" alt="" class="fileFinder" title="fileFinder: find any file here"></a>
+<div class = "binaryRect1" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small" >1010101001000011</p><p class = "small">10101010110111011</p><p class = "small">11101011010111011</p></div>
+<div class = "binaryRect2" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small">1010101001000011</p><p class = "small">10101010110111011</p><p class = "small">11101011010111011</p></div>
+<div class = "binaryRect3" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small">1000011</p><p class = "small">10111011</p><p class = "small">11111011</p></div>
+<div class = "binaryRect4" onClick="MM_DW_effectFade($(this),'hide','fade',1000)"><p class = "small">1000011</p><p class = "small">10111011</p><p class = "small">11111011</p></div>
+	
+	<div style = "position:absolute; left: 650px; top: 50px; font-size: 410px; color: #640708" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseMove="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)">1</div>
+<div style = "position:absolute; left: 400px; top: 100px; font-size: 310px; color: #2C0000" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectSlide($(this),'hide','slide','left',20,1000)">0</div>
+<div style = "position:absolute; left: 150px; top: 5px; font-size: 250px; color: #2C0000" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)">0</div>
+<div style = "position:absolute; left: 550px; top: 200px; font-size: 490px; color: #640708" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseMove="MM_DW_effectSlide($(this),'hide','slide','left',20,1000)">0</div>
+<div style = "position:absolute; right: 450px; top: 50px; font-size: 590px; line-height: 0.8" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)">1</div>
+<div style = "position:absolute; right: 150px; top: 0px; font-size: 390px; color: #640708" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseMove="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',5,1000)">0</div>
+<div style = "position:absolute; right: 630px; top: 0px; font-size: 290px" onMousOver="MM_DW_effectDrop($(this),'hide','drop','down',1000)">0</div>
+<div style = "position:absolute; left : 530px; top: 0px; font-size: 210px" onMouseMove="MM_DW_effectSlide($(this),'toggle','slide','left',20,1000)">1</div>
+<div style = "position:absolute; left : 330px; top: 200px; font-size: 310px" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseMove="MM_DW_effectSlide($(this),'hide','slide','left',20,1000)">1</div>
+<div style = "position:absolute; left : 430px; top: 320px; font-size: 310px; color: #2C0000" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectPulsate($(this),'effect','pulsate','hide',5,1000)">1</div>
+<div style = "position:absolute; left : 630px; top: 120px; font-size: 410px" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)">0</div>
+<div style = "position:absolute; right : 330px; top: 120px; font-size: 410px; color: #2C0000" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectPulsate($(this),'effect','pulsate','toggle',5,1000)">1</div>
+<div style = "position:absolute; right : 630px; top: 120px; font-size: 510px; color: #640708" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)">1</div>
+<div style = "position:absolute; right : 730px; top: 120px; font-size: 310px; color: #2C0000" onMouseMove="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',3,1000)">0</div>
+<div style = "position:absolute; right : 900px; top: 0px; font-size: 510px; color: #B81416" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',5,1000)">1</div>
+<div style = "position:absolute; right : 850px; top: 300px; font-size: 410px; color: #640708" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectSlide($(this),'hide','slide','left',20,1000)">0</div>
+<div style = "position:absolute; right : 180px; top: 200px; font-size: 410px" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)">0</div>
+<div style = "position:absolute; right : 220px; top: 310px; font-size: 410px; color: #B81416" onClick="MM_DW_effectDrop($(this),'hide','drop','down',1000)" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)">1</div>
+<div style = "position:absolute; left : 240px; top: 425px; font-size: 310px; color: #B81416" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','down',1000)">0</div>
+<div style = "position:absolute; right : 240px; top: 0px; font-size: 410px; color: #B81416; line-height: 0.8" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','down',1000)">0</div>
+	
+	<div class = "binary1" onMouseOver="MM_DW_effectFade($(this),'hide','fade',1000)">
+    <img src="Binary.png" width="500" height="453" alt=""/> 
+	</div>
+	<div class = "binary2" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)">
+		<img src="Binary.png" width="500" height="453" alt="" />
+	</div>
+	
+<div class = "binary3" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)">
+		<img src="Binary.png" width="200" height="179" alt="" />
+	</div>
+<div class = "binary4" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)"><img src="Binary.png" width="700" height="632" alt="" />
+	</div>
+<div class = "binary5" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)">
+		<img src="Binary.png" width="300" height="274" alt="" />
+	</div>
+<div class = "binary6" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)">
+		<img src="Binary.png" width="700" height="632" alt="" />
+	</div>
+<div class = "binary7" onMouseOver="MM_DW_effectDrop($(this),'hide','drop','left',1000)">
+		<img src="Binary.png" width="450" height="405" alt="" />
+	</div>
+	
+	
+</body>
+</html>
